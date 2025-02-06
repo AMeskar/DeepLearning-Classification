@@ -155,9 +155,9 @@ A feature may inadvertently “leak” information about the target if its distr
 ### Categorical Encoding:
 - **One-Hot Encoding:**  
  <p>Converts a categorical variable into a set of binary variables:</p>
-<p>$$\[
+<p>$$
   X_{\text{neighborhood}} \rightarrow \{ \mathbb{1}_{\{\text{neighborhood} = n\}} \}_{n=1}^{N}
-  \]$$</p>
+  $$</p>
   **Why the “Neighborhood” Feature May Not Appear Strongly Correlated Initially:**  
   - **Dilution Across Dummies:** When a categorical variable is one-hot encoded, the impact is spread across multiple binary features. Individually, these binary indicators may show a low Pearson correlation with the target due to their binary nature and lower variance. However, collectively they capture important latent information.
   - **Interaction Effects:** The influence of “Neighborhood” may be indirect, affecting other variables (e.g., lot size, quality ratings). This indirect influence may only become apparent when examining multivariate models or via interaction terms.
@@ -174,10 +174,10 @@ A feature may inadvertently “leak” information about the target if its distr
 ## 8. Machine Learning Models & Mathematical Foundations
 
 ### Bias-Variance Decomposition:
-For any estimator $\( \hat{f} \)$, the expected prediction error can be decomposed as:
-$$\[
+<p>For any estimator $\(\hat{f}\)$, the expected prediction error can be decomposed as:</p>
+<p>$$\[
 \mathbb{E}\left[(Y - \hat{f}(X))^2\right] = \underbrace{\left(\mathbb{E}[\hat{f}(X)] - f(X)\right)^2}_{\text{Bias}^2} + \underbrace{\mathbb{E}\left[(\hat{f}(X) - \mathbb{E}[\hat{f}(X)])^2\right]}_{\text{Variance}} + \sigma^2_{\text{irreducible}}
-\]$$
+\]$$</p>
 - **Random Forest:**  
   Reduces variance via bagging (bootstrap aggregating) and random feature selection. Each tree $\( f_t(X) \)$ contributes to the final prediction:
   $$\[
