@@ -165,9 +165,9 @@ A feature may inadvertently “leak” information about the target if its distr
 
 - **Scaling:**  
   Numeric features are standardized using StandardScaler:
-  <p>$$
+  $$\[
   X_{\text{scaled}} = \frac{X - \mu_X}{\sigma_X}
-  $$</p>
+  \]$$
 ---
 
 ## 8. Machine Learning Models & Mathematical Foundations
