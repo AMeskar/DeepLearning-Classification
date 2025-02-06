@@ -228,7 +228,7 @@ $$
 ### Interpreting Feature Importance:
 - **Neighborhood's Role:**  
   Although individual one-hot encoded neighborhood variables might show low correlation coefficients, their collective influence is significant. This is because:
-  - **Latent Variable Effect:** Neighborhood indirectly drives house prices through associated variables like lot size, overall quality, and local amenities.
+  - **Latent Variable Effect:** Neighborhood indirectly impacts house prices through associated variables like lot size, overall quality, and local amenities.
   - **Statistical Significance in Multivariate Models:** When included in regression or ensemble models, the group effect of these variables reduces error variance significantly, as evidenced by partial dependency and permutation importance analyses.
   - **Regularization Insights:** In regularized linear models (like LASSO), groups of correlated dummies may be shrunk together rather than individually selected, highlighting their collective impact.
 
