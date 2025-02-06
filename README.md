@@ -165,10 +165,9 @@ A feature may inadvertently “leak” information about the target if its distr
 
 - **Scaling:**  
   Numeric features are standardized using StandardScaler:
-  $$
+  <p>$$
   X_{\text{scaled}} = \frac{X - \mu_X}{\sigma_X}
-  $$
-
+  $$</p>
 ---
 
 ## 8. Machine Learning Models & Mathematical Foundations
@@ -188,16 +187,16 @@ $$</p>
 ### Other Models:
 - **Linear Regression:**  
   Assumes a linear relationship:
-  <p>$$\[
+  <p>$$
   y = \beta_0 + \beta_1 X_1 + \ldots + \beta_d X_d + \epsilon
-  \]$$</p>
+  $$</p>
   Sensitivity to multicollinearity is checked via VIF.
 - **Gradient Boosting Machines (GBM):**  
   Iteratively correct errors:
   <p>$$\[
   \hat{f}_m(X) = \hat{f}_{m-1}(X) + \gamma_m h_m(X)
   \]$$</p>
-  where $\( h_m(X) \)$ is the new weak learner and $\( \gamma_m \)$ is the step size.
+  where $ h_m(X) $ is the new weak learner and $ \gamma_m $ is the step size.
 
 ---
 
@@ -205,9 +204,9 @@ $$</p>
 
 ### Metrics:
 - **R² (Coefficient of Determination):**
-  <p>$$\[
+  <p>$$
   R^2 = 1 - \frac{\sum_{i}(y_i - \hat{y}_i)^2}{\sum_{i}(y_i - \bar{y})^2}
-  \]$$</p>
+  $$</p>
   This metric explains the proportion of variance in the dependent variable that is predictable from the independent variables.
 - **Residual Analysis:**  
   Residuals are analyzed to verify:
