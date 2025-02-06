@@ -198,7 +198,7 @@ $$
 \hat{f}_m(X) = \hat{f}_{m-1}(X) + \gamma_m h_m(X)
 $$
 </p>
-<p>where $\( h_m(X) )$ is the new weak learner and $\( \gamma_m )$ is the step size.</p>
+<p>where $ h_m(X) $ is the new weak learner and $ \gamma_m $ is the step size.</p>
 
 ---
 
