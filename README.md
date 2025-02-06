@@ -273,17 +273,3 @@ $$
 ## 13. Conclusion
 
 This advanced analysis combines rigorous statistical validation, probabilistic missing data handling, and mathematically-informed machine learning approaches to deliver robust, interpretable predictions of house prices.
-
-### Key Takeaways:
-- **Data Leakage Prevention:**  
-  Ensured via rigorous train-test correlation checks and statistical tests.
-- **Probabilistic Imputation:**  
-  Handling MCAR, MAR, and MNAR through KNN and iterative imputation provides robustness.
-- **Complex Feature Relationships:**  
-  Detailed treatment of categorical variables like “Neighborhood” illustrates that low individual correlations can mask strong latent effects when encoded properly.
-- **Model Selection:**  
-  The bias-variance tradeoff, rigorously explained and validated, underscores why ensemble methods such as Random Forest excel in this context.
-- **Actionable Economic Insights:**  
-  The integration of statistical evidence with economic intuition offers a framework for real-world real estate decision-making.
-
-By blending statistical theory with practical machine learning implementations, this project not only predicts house prices with high accuracy but also empowers data scientists and real estate investors with deep, actionable insights.
