@@ -135,11 +135,11 @@ A feature may inadvertently “leak” information about the target if its distr
 - **KNN Imputation:**  
   Uses distance metrics (e.g., Euclidean distance) to impute missing values based on the $\(k\)$ nearest neighbors.
 - **Iterative Imputation (MICE):**  
-  Models each feature with missing values as a function of other features iteratively. Mathematically, each missing value $\(\hat{x}_i\)$ is updated by:
-  $$\[
+ <p>Models each feature with missing values as a function of other features iteratively. Mathematically, each missing value $\(\hat{x}_i\)$ is updated by:</p>
+<p>$$\[
   \hat{x}_i = \mathbb{E}[X_i \mid \mathbf{X}_{-i}]
-  \]$$
-  where $\(\mathbf{X}_{-i}\)$ are the observed features.
+  \]$$</p>
+<p>where $\(\mathbf{X}_{-i}\)$ are the observed features.</p>
 
 ---
 
