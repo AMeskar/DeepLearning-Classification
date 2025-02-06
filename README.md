@@ -193,10 +193,10 @@ $$</p>
   Sensitivity to multicollinearity is checked via VIF.
 - **Gradient Boosting Machines (GBM):**  
   Iteratively correct errors:
-  $$\[
+  <p>$$
   \hat{f}_m(X) = \hat{f}_{m-1}(X) + \gamma_m h_m(X)
-  \]$$
-  where <p>$ h_m(X) $</p> is the new weak learner and <p>$ \gamma_m $</p> is the step size.
+  $$</p>
+  where $(\ h_m(X) \)$ is the new weak learner and $(\ \gamma_m \)$ is the step size.
 
 ---
 
