@@ -165,9 +165,9 @@ A feature may inadvertently “leak” information about the target if its distr
 
 - **Scaling:**  
   Numeric features are standardized using StandardScaler:
-  $$\[
+  $$
   X_{\text{scaled}} = \frac{X - \mu_X}{\sigma_X}
-  \]$$
+  $$
 
 ---
 
@@ -175,28 +175,28 @@ A feature may inadvertently “leak” information about the target if its distr
 
 ### Bias-Variance Decomposition:
 <p>For any estimator $\(\hat{f}\)$, the expected prediction error can be decomposed as:</p>
-<p>$$\[
+<p>$$
 \mathbb{E}\left[(Y - \hat{f}(X))^2\right] = \underbrace{\left(\mathbb{E}[\hat{f}(X)] - f(X)\right)^2}_{\text{Bias}^2} + \underbrace{\mathbb{E}\left[(\hat{f}(X) - \mathbb{E}[\hat{f}(X)])^2\right]}_{\text{Variance}} + \sigma^2_{\text{irreducible}}
-\]$$</p>
+$$</p>
 - **Random Forest:**  
   Reduces variance via bagging (bootstrap aggregating) and random feature selection. Each tree $\( f_t(X) \)$ contributes to the final prediction:
-  $$\[
+  <p>$$
   \hat{f}(X) = \frac{1}{T} \sum_{t=1}^T f_t(X)
-  \]$$
+  $$</p>
   Since each tree has high variance but low bias, the ensemble averages out the variance while keeping bias controlled.
 
 ### Other Models:
 - **Linear Regression:**  
   Assumes a linear relationship:
-  $$\[
+  <p>$$
   y = \beta_0 + \beta_1 X_1 + \ldots + \beta_d X_d + \epsilon
-  \]$$
+  $$</p>
   Sensitivity to multicollinearity is checked via VIF.
 - **Gradient Boosting Machines (GBM):**  
   Iteratively correct errors:
-  $$\[
+  <p>$$
   \hat{f}_m(X) = \hat{f}_{m-1}(X) + \gamma_m h_m(X)
-  \]$$
+  $$</p>
   where $\( h_m(X) \)$ is the new weak learner and $\( \gamma_m \)$ is the step size.
 
 ---
@@ -205,9 +205,9 @@ A feature may inadvertently “leak” information about the target if its distr
 
 ### Metrics:
 - **R² (Coefficient of Determination):**
-  $$\[
+  <p>$$
   R^2 = 1 - \frac{\sum_{i}(y_i - \hat{y}_i)^2}{\sum_{i}(y_i - \bar{y})^2}
-  \]$$
+  $$</p>
   This metric explains the proportion of variance in the dependent variable that is predictable from the independent variables.
 - **Residual Analysis:**  
   Residuals are analyzed to verify:
