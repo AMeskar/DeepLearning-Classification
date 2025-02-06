@@ -12,7 +12,7 @@
 8. [Machine Learning Models & Mathematical Foundations](#machine-learning-models--mathematical-foundations)  
 9. [Model Performance Analysis & Interpretation](#model-performance-analysis--interpretation)  
 10. [Feature Importance & Statistical Justifications](#feature-importance--statistical-justifications)  
-11. [Decision-Making Insights](#decision-making-insights)  
+11. [Decision-Making](#decision-making)  
 12. [Why Random Forest Performed Best](#why-random-forest-performed-best)  
 13. [Conclusion](#conclusion)
 
@@ -241,7 +241,7 @@ $$
 
 ---
 
-## 11. Decision-Making Insights
+## 11. Decision-Making 
 
 ### Translating Statistical Findings into Real-World Decisions:
 - **Investment Strategy:**  
@@ -249,7 +249,7 @@ $$
 - **Neighborhood Analysis:**  
   Neighborhoods with characteristics such as higher lot areas and favorable school districts, though not always linearly correlated with price in isolation, are significant when their indirect effects (captured via categorical encoding) are considered. This suggests targeted investments in regions with latent high demand.
 - **Risk Assessment:**  
-  Residual analysis and confidence intervals (derived from bootstrapping predictions) provide insights into the risk associated with price predictions, enabling more informed decision-making.
+  Residual analysis and confidence intervals (derived from bootstrapping predictions) provide insights into the risk associated with price predictions, which means more informed decision-making.
 
 ---
 
